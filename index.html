@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -29,21 +29,62 @@
 
 <body>
 
-  Learn to code by watching others
+  <div class="container">
+    <div>
+      <h1>
+        Learn to code by watching others
+      </h1>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-  but understanding how developers think is invaluable.
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
 
-  Try it free 7 days then $20/mo. thereafter
+    <div>
+      <div class="box box-blue">
+        <p>
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </p>
+      </div>
 
-  First Name
-  Last Name
-  Email Address
-  Password
+      <form class="box">
+        <div class="form-control">
+          <input type="text" id="firstname" placeholder="First Name">
+          <small>
+            First Name cannot be empty
+          </small>
+        </div>
+        <div class="form-control">
+          <input type="text" id="lastname" placeholder="Last Name">
+          <small>
+            Last Name cannot be empty
+          </small>
+        </div>
+        <div class="form-control">
+          <input type="email" id="email" placeholder="Email Address">
+          <small>
+            Looks like this is not an email
+          </small>
+          <!-- <small>
+            Email is not vaild
+          </small> -->
+        </div>
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password">
+          <small>
+            Password cannot be empty
+          </small>
+        </div>
 
-  Claim your free trial
+        <button>Claim your free trial</button>
+        <small>
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </small>
+      </form>
+    </div>
+  </div>
 
-  By clicking the button, you are agreeing to our Terms and Services
 
   <!-- <footer>
     <p class="attribution">
