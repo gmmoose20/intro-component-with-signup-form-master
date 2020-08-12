@@ -38,16 +38,12 @@ function addErrorTo(field, message) {
   formControl.classList.add('error')
   const small = formControl.querySelector('small');
   small.innerText = message;
-  // small.style.opacity = '1';
 }
-
 
 
 function removeErrorFrom(field) {
   const formControl = form[field].parentNode
   formControl.classList.remove('error')
-  // const small = formControl.querySelector('small');
-  // small.style.opacity = '0';
 }
 
 function isValid(email) {

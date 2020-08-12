@@ -93,7 +93,7 @@ input {
 }
 
 .form-control.error input[type="password"]::placeholder {
-  opacity: 1;
+  opacity: 0;
 }
 
 .form-control.error input[type="email"]::placeholder {
