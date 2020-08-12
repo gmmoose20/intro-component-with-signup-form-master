@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
     removeErrorFrom('email');
   }
   if (password === '') {
-    addErrorTo('password', 'Password cannot be empty');
+    addErrorTo('password', 'Password cannotbe empty');
   } else {
     removeErrorFrom('password');
   }
