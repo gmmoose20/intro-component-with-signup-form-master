@@ -14,7 +14,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
+  <style>
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -23,7 +23,7 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-  </style> -->
+  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +32,8 @@
   <div class="container">
     <div>
       <h1>
-        Learn to code by watching others
+        Learn to code by<br>
+        watching others
       </h1>
 
       <p>
@@ -48,33 +49,29 @@
         </p>
       </div>
 
-      <form class="box">
+      <form class="box" id="form">
         <div class="form-control">
           <input type="text" id="firstname" placeholder="First Name">
-          <small>
-            First Name cannot be empty
-          </small>
+          <img src="./images/icon-error.svg" alt="error-icon">
+          <small></small>
         </div>
         <div class="form-control">
           <input type="text" id="lastname" placeholder="Last Name">
-          <small>
-            Last Name cannot be empty
-          </small>
+          <img src="./images/icon-error.svg" alt="error-icon">
+          <small></small>
         </div>
         <div class="form-control">
           <input type="email" id="email" placeholder="Email Address">
-          <small>
-            Looks like this is not an email
-          </small>
+          <img src="./images/icon-error.svg" alt="error-icon">
+          <small></small>
           <!-- <small>
             Email is not vaild
           </small> -->
         </div>
         <div class="form-control">
           <input type="password" id="password" placeholder="Password">
-          <small>
-            Password cannot be empty
-          </small>
+          <img src="./images/icon-error.svg" alt="error-icon">
+          <small></small>
         </div>
 
         <button>Claim your free trial</button>
@@ -86,12 +83,15 @@
   </div>
 
 
-  <!-- <footer>
+  <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Gm Awesome</a>.
     </p>
-  </footer> -->
+  </footer>
+
+  <!-- Javascript -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
